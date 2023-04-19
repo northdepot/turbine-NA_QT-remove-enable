@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: turbine
+  namespace: user1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/turbine@sha256:a7bf528d57ffd04d56f940e1856fc18151d4632d273f32bb8949db2069fd772c
+        name: quinoa-wind-turbine-image
+        resources: {}
+status: {}

@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: turbine
     spec:
       containers:
-      - image: quay.io/jduimovich0/turbine
+      - image: quay.io/jduimovich0/turbine@sha256:a7bf528d57ffd04d56f940e1856fc18151d4632d273f32bb8949db2069fd772c
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
